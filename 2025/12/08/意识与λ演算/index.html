@@ -28,7 +28,7 @@
 <meta property="og:description" content="前言 本文的灵感来源于我对《哥德尔、埃舍尔、巴赫：集异璧之大成》核心观点的探索。虽然尚未通读原著，但在通过AI梳理其脉络时，书中关于“自指”与“怪圈”的概念引发了我对λ演算的强烈共鸣。 λ演算 什么是λ演算 λ演算是图灵的博士导师丘奇所创造的用于研究计算理论的工具，理论上和图灵机是完全等价的，至今你还可以在现代程序语言的匿名函数里看到它的影子。 λ演算的基本元素是λ表达式。我们用符号M来">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-12-08T02:36:39.000Z">
-<meta property="article:modified_time" content="2025-12-08T09:45:58.047Z">
+<meta property="article:modified_time" content="2025-12-08T09:50:49.390Z">
 <meta property="article:author" content="Zane.F">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-12-08 10:36:39 / 修改时间：17:45:58" itemprop="dateCreated datePublished" datetime="2025-12-08T10:36:39+08:00">2025-12-08</time>
+              <time title="创建时间：2025-12-08 10:36:39 / 修改时间：17:50:49" itemprop="dateCreated datePublished" datetime="2025-12-08T10:36:39+08:00">2025-12-08</time>
             </span>
 
           
@@ -322,12 +322,8 @@ $$</span></p>
 <p>当你在此层级系统中似乎总是朝着一个方向（比如向上、向外）移动，但在经历了一系列步骤后，却惊奇地发现自己回到了起点。</p>
 </blockquote>
 <p>怪圈之所以能形成，核心动力来自于自指。也就是一个系统能够“谈论它自己”或“指向它自己”。</p>
-<figure>
-<img
-src="https://i.mji.rip/2025/12/08/0df492f3e3324c511b818edf370ba0dc.jpeg"
-alt="画手" />
-<figcaption aria-hidden="true">画手</figcaption>
-</figure>
+<p><img
+src="https://i.mji.rip/2025/12/08/0df492f3e3324c511b818edf370ba0dc.jpeg" /></p>
 <p>这个自我指涉的怪圈极其稳定、极其复杂，以至于产生了一种幻觉——觉得自己是一个独立的、有意志的实体。这个实体就是“我”。</p>
 <p>在我们的生活中也会有这样的体验。当你正在思考的时候，会察觉到“自己正在思考”这件事。佛家把那个正在察觉的东西称作“末那识”，即六识之后的第七识。</p>
 <p>有编程经验的人不难联想到递归的概念。在程序语言领域，递归通常指一个函数在自己的定义里调用了自己。现代程序语言基本都支持递归特性：</p>
@@ -342,8 +338,11 @@ alt="画手" />
 \end{aligned}
 $$</span></p>
 <p>当我们将Y组合子应用到一个λ表达式上时，将会产生这样的效果：</p>
-<p><span
-class="math display">(<em>Y</em> <em>M</em>)→<sub><em>β</em></sub>(<em>M</em> (<em>Y</em> <em>M</em>))</span></p>
+<p><span class="math display">$$
+\begin{aligned}
+  (Y \; M) \to_{\beta} (M \; (Y \; M))
+\end{aligned}
+$$</span></p>
 <p>由此我们在λ演算的世界里创造了自指/递归/循环的概念。我们身体里的那个所谓的自我意识就是类似的存在。</p>
 <h3 id="哥德尔不完备定理和停机问题">哥德尔不完备定理和停机问题</h3>
 <p>哥德尔证明了在任何足够复杂的数理逻辑系统中，都存在一些“真”但“无法在系统内被证明”的命题。这就像人类有意识，但我们无法通过内省完全理解产生意识的大脑神经元结构。</p>
